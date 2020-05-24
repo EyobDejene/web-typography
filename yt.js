@@ -153,8 +153,8 @@ function onPlayerStateChange(event) {
   var t = player.getCurrentTime();
   t = t.toString();
   t = t.split(".");
-  console.log(t);
-  console.log("playtime"+ t);
+  // console.log(t);
+  // console.log("playtime"+ t);
   if(state == 3){
     backgroundPlayer.src += "&autoplay=1";
     // backgroundPlayer.src += "https://www.youtube.com/embed/vrP-_T-h9YM?controls=0&amp;start="+t[0]+"&enablejsapi=1&autoplay=1&mute=1";
@@ -170,7 +170,7 @@ function onPlayerStateChange(event) {
 
 	}
 	if(state == 2){
-      console.log("playtime" + t);
+      // console.log("playtime" + t);
       // console.log('paused');
       var stopAllYouTubeVideos = () => {
         var iframes = document.querySelectorAll('iframe');
