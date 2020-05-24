@@ -87,7 +87,7 @@ Hier bleek het goed te werken en was nieuw voor Darice.
 
 
 ### Week 2  
-<img src="/assets/week1.gif" width="100%" height="auto">
+<img src="/assets/week2.gif" width="100%" height="auto">
 
 In de tweede week ben verder gegaan met geëxperimenteren en heb er voorgekozen om de helft van het fragment te animeren.
 De kleuren had ik nog niet bepaald maar het concept stond.
