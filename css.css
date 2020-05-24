@@ -10,6 +10,7 @@ html,body{
 	margin: 0;
 	background-color: #000;
 	height: 100%;
+    z-index: 0;
 
 }
 *,html,body{
@@ -36,7 +37,7 @@ html,body{
 	position: absolute;
 	text-align: center;
 	width: 100%;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 
 }
 #closed-captions .on {
@@ -134,6 +135,7 @@ You probably want to change the styling.
 	margin: auto;
 	display: flex;
     transform-origin: center;
+    z-index: 2;
 }
 
 .scan
@@ -153,6 +155,12 @@ You probably want to change the styling.
 	animation: shake 0.8s ease-in-out;
 	animation-iteration-count: 30;
 }
+
+.sound0 .soundInfo{
+    display: block;
+}
+
+
 
 .sound1 #video-placeholder {
 	animation: zoomIn 2s ease-in-out;
@@ -251,9 +259,18 @@ You probably want to change the styling.
 	transform: rotate(10deg);
 }
 
-.sound2{
+.sound2 .background{
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    z-index: 0;
     animation: sirene 0.5s ease-in-out;
     animation-iteration-count: 3;
+    filter: blur(1000px);
 }
 
 
@@ -292,20 +309,20 @@ You probably want to change the styling.
     animation-iteration-count: 1;
 }
 
-.sound6 .scan{
+.sound7 .scan{
     -moz-animation: scan2 1.2s;
     -webkit-animation: scan2 1.2s;
     animation: scan2 1.2s;
-    animation-iteration-count: 1;
+    animation-iteration-count: 2;
     animation-direction: alternate;
 }
 
-.sound7{
+.sound11{
     animation: doorSound3 2s ease-in-out;
     animation-iteration-count: 1;
 }
 
-.sound8 .scan{
+.sound12 .scan{
     -moz-animation: scan3 1.2s;
     -webkit-animation: scan3 1.2s;
     animation: scan3 1.2s;
@@ -313,7 +330,7 @@ You probably want to change the styling.
     animation-direction: alternate;
 }
 
-.sound9 {
+.sound13 {
 
     animation: shakeUp 0.1s cubic-bezier(.36,.07,.19,.97) both infinite;
     transform: translate3d(0, 0, 0);
@@ -321,25 +338,25 @@ You probably want to change the styling.
     perspective: 1000px;
 }
 
-.sound10 {
-    background-color: #ffffff!important;
+.sound14 {
+    background-color: #000000!important;
     animation: none;
 }
 
-.sound11 .blok-right{
-    background: url(assets/money_with_wings.gif) center center / cover no-repeat;
-    animation: rightblock-dollar 2s ease-in-out;
-    animation-iteration-count: 1;
-    transform: rotate(10deg);
-}
-.sound11 .blok-left{
-    background: url(assets/money_with_wings.gif) center center / cover no-repeat;
-    animation: leftblock-dollar 2s ease-in-out;
-    animation-iteration-count: 1;
-    transform: rotate(10deg);
-}
+/*.sound13 .blok-right{*/
+    /*background: url(assets/money_with_wings.gif) center center / cover no-repeat;*/
+    /*animation: rightblock-dollar 2s ease-in-out;*/
+    /*animation-iteration-count: 1;*/
+    /*transform: rotate(10deg);*/
+/*}*/
+/*.sound13 .blok-left{*/
+    /*background: url(assets/money_with_wings.gif) center center / cover no-repeat;*/
+    /*animation: leftblock-dollar 2s ease-in-out;*/
+    /*animation-iteration-count: 1;*/
+    /*transform: rotate(10deg);*/
+/*}*/
 
-.sound12 {
+.sound15 {
     background-color: #000000!important;
     animation: none;
 }
@@ -361,23 +378,23 @@ You probably want to change the styling.
 
 
 @keyframes doorSound {
-    0%  {background-color: #000000;}
-    80%  {background-color: #ffff;}
-    100%  {background-color: #000000;}
+    /*0%  {background-color: #000000;}*/
+    /*80%  {background-color: #404040;}*/
+    /*100%  {background-color: #000000;}*/
 }
 
 @keyframes doorSound2 {
 
-    0%  {background-color: #000000;}
-    80%  {background-color: #ffff;}
-    100%  {background-color: #000000;}
+    /*0%  {background-color: #000000;}*/
+    /*80%  {background-color: #ffff;}*/
+    /*100%  {background-color: #000000;}*/
 }
 
 @keyframes doorSound3 {
 
-    0%  {background-color: #000000;}
-    80%  {background-color: #ffff;}
-    100%  {background-color: #000000;}
+    /*0%  {background-color: #000000;}*/
+    /*80%  {background-color: #ffff;}*/
+    /*100%  {background-color: #000000;}*/
 }
 
 
@@ -437,8 +454,11 @@ voice robot
 	text-align: center;
 	padding: 3rem;
 	border-radius: 50%;
-	background-color: rebeccapurple;
+	background-color: white;
+    color: black;
+    border:2px solid transparent;
 	transform: rotate(-12deg);
+
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
@@ -500,7 +520,7 @@ voice robot
 	width: 0;
 	height: 0px;
 	border: 80px solid transparent;
-	border-top-color: rebeccapurple;
+	border-top-color: white;
 	border-bottom: 0;
 	border-right: 0px;
 	margin-left: 19px;
@@ -563,7 +583,7 @@ voice robot
     right: 50%;
     position: absolute;
     top: -330px;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     text-align: center;
 }
 
@@ -725,7 +745,7 @@ voice robot
 #closed-captions .p79:after
 {
     border: 50px solid transparent;
-    border-top-color: rebeccapurple;
+    border-top-color: white;
     border-bottom: 0;
     border-right: 0px;
     margin-left: -19px;
@@ -739,7 +759,7 @@ voice robot
     margin-bottom: 135px;
 }
 #closed-captions .p16:after{
-    margin-bottom: 195px;
+    margin-bottom: 155px;
 }
 
 #closed-captions .p13:after{
@@ -753,7 +773,7 @@ voice robot
 #closed-captions .p32:after,
 #closed-captions .p35:after{
     margin-left: -29px;
-    margin-bottom: 153px;
+    margin-bottom: 144px;
 }
 
 
@@ -896,7 +916,9 @@ voice man
 	text-align: center;
 	padding: 3rem;
 	border-radius: 50%;
-	background-color: #487f80;
+    background-color: white;
+    color: black;
+    border:2px solid transparent;
 	transform: rotate(-8deg);
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -953,7 +975,8 @@ voice man
 	width: 0;
 	height: 0px;
 	border: 60px solid transparent;
-	border-top-color: #487f80;
+    border-bottom: solid 2px transparent ;
+	border-top-color: white;
 	border-bottom: 0;
 	border-right: 0px;
 	margin-left: -141px;
@@ -974,10 +997,11 @@ voice man
     top: -800px!important;
     left: 39%;
     transform: rotate(6deg);
-    background-color: #cc0505;
+    background-color: white;
+    color: black;
 }
 #closed-captions .p6:after{
-    border-top-color: #cc0505;
+    border-top-color: white;
     margin-left: -31px!important;
     margin-bottom: -28px!important;
     transform: rotate(31deg) !important;
@@ -989,7 +1013,7 @@ voice man
 }
 #closed-captions .p7:after{
     border-top-color: transparent;
-    background-color: #487f80;
+    background-color: white;
     left: 43%;
     margin-left: -173px;
     border-radius: 100%;
@@ -1103,7 +1127,7 @@ voice man
 	right: 0%;
 	position: absolute;
 	top: -330px;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	text-align: center;
 }
 
@@ -1272,11 +1296,13 @@ body #closed-captions .p47:after{
 animation
  */
 @keyframes sirene {
-    0%  {background-color: #1649ec;}
-    10%  {background-color: #1649ec;}
-    40%  {background-color: #ff0d24;}
-    100%  {background-color: #ff1237;}
+    0%  {background-color: #2601ec;}
+    10%  {background-color: #2601ec;}
+    40%  {background-color: #ff1500;}
+    100%  {background-color: #ff1500;}
 }
+
+
 
 
 @keyframes leftblock-alarm {
@@ -1437,4 +1463,135 @@ animation
         opacity: 0;
     }
 
+}
+
+
+.bg-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    filter: blur(100px);
+    opacity: 1;
+}
+.bg-video.--is-active {
+    filter: blur(0px);
+}
+
+.bg-video {
+    transition: 42s ease-in transform;
+}
+.soundInfo p{
+    font-family: "brenner mono";
+    padding-left: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+/* soundinformation */
+
+.soundInfo{
+    height: auto;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*background-color: #ffcf02;*/
+    background-color: #848e5b26;
+    color: #ffffff;
+    font-size: 1rem;
+    /*border: 2px solid #ffffff;*/
+    /*clip-path: polygon(100% 0, 89% 100%, 0 100%, 0 0);*/
+    box-sizing: border-box;
+    z-index: 10;
+    display: none;
+}
+
+.sound0 .soundInfo p::before {
+    content: "🎵 Daunting music";
+}
+
+.sound1 .soundInfo p::before {
+    content: "⚠️ Gate opens";
+}
+
+.sound2 .soundInfo p::before {
+    content: "🚨 Police siren";
+}
+
+.sound3 .soundInfo p::before {
+    content: "🎵 Scanning object";
+}
+.sound4 .soundInfo p::before {
+    content: "🎵 Scanning object";
+}
+
+.sound5 .soundInfo {
+    display: none;
+}
+
+.sound6 .soundInfo {
+    display: block;
+}
+
+.sound6 .soundInfo p::before {
+    content: "🗣️ Speaking people";
+}
+
+.sound7 .soundInfo p::before {
+    content: "🎵 Scanning object";
+}
+
+.sound8 .soundInfo  {
+   display: none;
+}
+
+.sound9 .soundInfo  {
+    display: block;
+}
+
+.sound9 .soundInfo p::before {
+    content: "🎙️ Intercom speaking in the background";
+}
+
+.sound11 .soundInfo p::before {
+    content: "🎵 Scanning object";
+}
+
+.sound12 .soundInfo p::before {
+    content: "🎵 Scanning object";
+}
+
+
+
+.sound13 .soundInfo p::before {
+    content: "🔉 Creepy noise";
+}
+
+.sound14 .soundInfo p::before {
+    content: "🔇 Completely silice";
+}
+
+.sound15 .soundInfo {
+    display: none;
+}
+
+.sound17 .soundInfo {
+    display: block;
+}
+
+.sound17 .soundInfo p::before {
+    content: "🎵 Mysterious music";
+}
+
+.sound18 .soundInfo p::before {
+    content: "🔇 Mysterious music stops";
+}
+
+.sound19 .soundInfo {
+    display: none;
 }
