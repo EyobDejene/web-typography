@@ -16,10 +16,11 @@ Het is de bedoeling dat ga ik geluiden en de ondertiteling samen breng op een
 visuele manier zodat film zonder geluiden ook de sfeer overbrengt.
 
 Mijn concept is gebaseerd op de interesses van Darice.
-Tijdens het interview kwam ik er achter dat Darice er van lezend houdt kwam toen op het idee dat stripboeken ook verhalen vertellen zonder geluiden in verschillende scenes  
-Daarom heb ik geëxperimenteerd met cartoon achtige element in dit korte fragment.
+Tijdens het interview kwam ik er achter dat Darice erg van lezend houdt en kwam toen op het idee dat stripboeken 
+ook verhalen vertellen zonder geluiden in verschillende scenes.  
+Daarom heb ik geëxperimenteerd met cartoon achtige elementen in dit korte fragment.
 Doormiddel van emoji’s toe te voegen kunnen er verschillende icons worden gelinkt met geluiden.
-Omdat Darice wel heeft kunnen horen kan zij nog steeds die linken in haar hoofd maken.
+Omdat Darice wel heeft kunnen horen kan zij nog steeds die link in haar hoofd maken.
 
 
 ### Leerdoelen:
@@ -34,7 +35,7 @@ Omdat Darice wel heeft kunnen horen kan zij nog steeds die linken in haar hoofd 
 ## Exclusive Design principles
 
 * study situation ( ontwerpen voor een bepaald persoon)
-* ignore convention ( waarom zou je dat gebruiken als je dat nooit hebt getest)
+* ignore convention ( waarom zou je "dat" gebruiken als je dat nooit hebt getest)
 * Prioritise identity ( prioriteren van identity van de persoon voor wie je het maakt)
 * Add nonsense ( hiermee kan het leuker worden en onzinnige idee blijken goede ideeën te zijn) 
 
@@ -42,10 +43,11 @@ Omdat Darice wel heeft kunnen horen kan zij nog steeds die linken in haar hoofd 
 ## Font
 
 Ik heb er voor gekozen om de Brenner font te gebruiken voor mijn concept omdat ik graag controle heb over hoe een bepaald woord of letter eruit komt te zien voor de eindgebruiker.
-Omdat Brenner uit verschillende varianten bestaat kan ik hiermee goed uit de voeten en verschillende nuances weer geven. 
+Omdat Brenner uit verschillende varianten bestaat kan ik hiermee goed uit de voeten en hiermee ook verschillende 
+nuances weergeven. 
 Wanneer ik gekozen had voor het systeemfont had ik nauwelijks controle gehad over de look en feel.
-Dit kan voor Darice wel een gewenning zijn, maar om bepaalde nuances te leggen binnen het verhaal ben ik toch sterk 
-van mening dat een het Brenner font meer kan overbrengen in tegenstelling tot het systeemfont. 
+Dit kan voor Darice zowel als prettig en onprettig worden ervaren, maar om bepaalde nuances te leggen binnen het 
+verhaal ben ik toch sterk van mening dat het Brenner font meer kan overbrengen in tegenstelling tot het systeemfont. 
 
 
 
@@ -102,12 +104,12 @@ korte fragment.
 <img src="/assets/end.gif" width="100%" height="auto">
 
 De laatste week heb ik besteed om de verkregen feedback te verwerken.
-Ik heb daarom meer eenheid gecreëerd en visueel meer consistentie aan te brengen.
-Dit heb ik gedaan door alle spraakwolken wit van kleur te maken.
-De achtergrond miste ook dynamisch gevoel dit heb ik proberen na te bootsen door de video op de achtergrond ook af te
-spelen en een "ambient light" te creëren.
+Ik heb meer eenheid gecreëerd proberen te krijgen en visueel meer consistentie aangebracht.
+Dit heb ik gedaan door alle spraakwolken wit te maken.
+De achtergrond miste ook nog dynamisch een gevoel dit heb ik proberen na te bootsen door de video op de achtergrond ook 
+af te spelen en er een soort van "ambient light" te creëren.
 Doordat ik een blur heb toegevoegd werkt het erg lekker alleen is dit nog niet getest.
-De sound annotaties heb ik zoals bij een stripboek links boven in geplaatst zodat je weet wat er zich op dit moment 
+De sound annotaties heb ik zoals bij een stripboek linksboven geplaatst zodat je weet wat er zich op dit moment 
 afspeeld.
 
 
