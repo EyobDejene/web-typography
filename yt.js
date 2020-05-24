@@ -60,7 +60,7 @@ function updateTimerDisplay(){
 			updateTimerDisplay();
 		}, 100);
 	}
-	
+  onPlayerStateChange();
 }
 function pTimes(num,startT,endT,curT) {
 	var curP = document.querySelector('.p' + num);
@@ -136,4 +136,68 @@ function sTimes(num,soundStarts,curT) {
 		};
 	}
 })();
+
+
+let bigPlayer = document.querySelector('#video-placeholder');
+let backgroundPlayer = document.querySelector('.bg-video');
+//
+// bigPlayer.addEventListener()
+//   player.playVideo();
+// });
+
+
+function onPlayerStateChange(event) {
+  // console.log('video started');
+  let state = player.getPlayerState();
+  // console.log(state);
+  var t = player.getCurrentTime();
+  t = t.toString();
+  t = t.split(".");
+  console.log(t);
+  console.log("playtime"+ t);
+  if(state == 3){
+    backgroundPlayer.src += "&autoplay=1";
+    // backgroundPlayer.src += "https://www.youtube.com/embed/vrP-_T-h9YM?controls=0&amp;start="+t[0]+"&enablejsapi=1&autoplay=1&mute=1";
+
+    // var playAllYouTubeVideos = () => {
+    //   var iframes = document.querySelectorAll('iframe');
+    //   Array.prototype.forEach.call(iframes, iframe => {
+    //     iframe.contentWindow.postMessage(JSON.stringify({ event: 'command',
+    //       func: 'playVideo' }), '*');
+    //   });
+    // }
+    // playAllYouTubeVideos();
+
+	}
+	if(state == 2){
+      console.log("playtime" + t);
+      // console.log('paused');
+      var stopAllYouTubeVideos = () => {
+        var iframes = document.querySelectorAll('iframe');
+        let command = {
+          "event": "command",
+          "func": "pauseVideo"
+        };
+        Array.prototype.forEach.call(iframes, iframe => {
+          iframe.contentWindow.postMessage(JSON.stringify(command), "*");
+          // iframe.contentWindow.postMessage(JSON.stringify({ event: 'command',
+          //   func: 'pauseVideo' }), '*');
+        });
+      };
+      stopAllYouTubeVideos();
+      backgroundPlayer.src = "https://www.youtube.com/embed/vrP-_T-h9YM?controls=0&amp;start="+t[0]+"&enablejsapi=1&mute=1&autoplay=1";
+	}
+
+}
+
+// function onPlayerStateChange(event) {
+//   if (event.data == YT.PlayerState.PLAYING) {  // If video is playing…
+//     var stop = document.getElementsByClassName('bx-stop');
+//     stop[0].click();
+//   }
+//   else{    // If video – pause
+//     var start = document.getElementsByClassName('bx-start');
+//     start[0].click();
+//   }
+// }
 

@@ -62,18 +62,18 @@ captions[43] = ['72.2','74.2'];
 captions[44] = ['77.1','78.7'];
 captions[45] = ['80','81.738'];
 captions[46] = ['82.2','84.3'];
-captions[47] = ['85.4','87'];
+captions[47] = ['85.4','86'];
 
 //end manual labour
 captions[48] = ['87.68','88.18'];
 captions[49] = ['88.38','88.88'];
 // Have you ever been in an institution. Cells
-captions[50] = ['88.88','91.24'];
+captions[50] = ['88.88','90.40'];
 captions[51] = ['91.34','91.84'];
 captions[52] = ['91.98','95.52'];
 // -Cells
 captions[53] = ['95.52','96.02'];
-captions[54] = ['96.12','100.2'];
+captions[54] = ['96.12','98.80'];
 captions[55] = ['100.3','102.4'];
 // -Interlinked
 captions[56] = ['102.64','103.3'];
@@ -85,10 +85,10 @@ captions[60] = ['106','106.5'];
 captions[61] = ['106.64','109.28'];
 // -Dreadfully
 captions[62] = ['109.28','109.8'];
-captions[63] = ['109.8','112.4'];
+captions[63] = ['109.8','111.4'];
 captions[64] = ['112.4','113'];
 // Dreadfully distinct
-captions[65] = ['113','114.06'];
+captions[65] = ['113','113.70'];
 captions[66] = ['114.12','114.98'];
 captions[67] = ['115.02','115.56'];
 // -Dark
@@ -104,6 +104,6 @@ captions[74] = ['122.66','123.86'];
 captions[75] = ['123.98','124.92'];
 captions[76] = ['124.92','125.52'];
 // A tall white fountain played
-captions[77] = ['125.52','127.28'];
-captions[78] = ['128.18','130.14'];
+captions[77] = ['126.60','128.0'];
+captions[78] = ['128.18','129.14'];
 captions[79] = ['132.58','135'];
